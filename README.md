@@ -1,0 +1,2 @@
+# garbage
+waste disposal plan
