@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{background-color:gray}
+        *{margin:10px;}
+        ul{margin:0px;}
+        li{
+            /* To jest kluczowa właściwość */
+    list-style-type: none;
+
+    /* Zazwyczaj też resetuje się domyślny padding,
+       który jest dodawany przez przeglądarki dla miejsca na kropki */
+    padding-left: 0;
+
+    /* Jeśli chcesz usunąć marginesy domyślne */
+    margin-left: 0;
+    margin-bottom:5px;
+        }
+        a{
+        text-decoration:none;
+        color: black;
+        background-color:lightgrey;
+        padding:5px;
+        margin:5px;
+        border: 1px black solid;
+        }
+        a:hover{background-color:blue;}
+    </style>
+</head>
+<body>
+<div>
+    <p>GROUPS:</p>
+    <ul>
+        % for group in groups:
+        <li>
+        <a href="/group/{{group.name}}">Rejon:  {{group.name}}</a>
+        </li>
+% end
+    </ul>
+    </ul>
+</div>
+</body>
+</html>
